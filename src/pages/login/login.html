@@ -24,7 +24,7 @@
       <ion-label color="dark" class="tekstKleur" stacked>Email</ion-label>
       <ion-input #email formControlName="email" type="email" placeholder="Jouw e-mailadres"
         [class.invalid]="!loginForm.controls.email.valid &&
-          loginForm.controls.email.dirty"></ion-input>
+          loginForm.controls.email.dirty" value="pieterjan.defeyter@ucll.be"></ion-input>
     </ion-item>
     <ion-item class="error-message achterGrondKleur" *ngIf="!loginForm.controls.email.valid  &&
       loginForm.controls.email.dirty">
@@ -35,7 +35,7 @@
       <ion-label  color="dark" stacked>Password</ion-label>
       <ion-input #password formControlName="password" type="password" placeholder="Jouw wachtwoord"
         [class.invalid]="!loginForm.controls.password.valid &&
-          loginForm.controls.password.dirty"></ion-input>
+          loginForm.controls.password.dirty" value="tester"></ion-input>
     </ion-item>
     <ion-item class="error-message achterGrondKleur" *ngIf="!loginForm.controls.password.valid  &&
       loginForm.controls.password.dirty">

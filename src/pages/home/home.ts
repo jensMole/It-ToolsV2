@@ -13,7 +13,10 @@ import { LoginPage } from '../login/login';
 export class HomePage {
 
   constructor(public navCtrl: NavController, public auth: AuthProvider) {
+  }
 
+  openPage(p){
+    this.navCtrl.push(p);
   }
 
   LogOut(){

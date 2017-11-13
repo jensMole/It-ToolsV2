@@ -1,10 +1,42 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Home
     </ion-title>
   </ion-navbar>
 </ion-header>
+
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-toolbar>
+        <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+        <button ion-item menuClose>
+            Home
+        </button>
+        <button ion-item (click)="openPage('')">
+            Video's
+        </button>
+        <button ion-item (click)="openPage('')">
+            Aankondigingen
+        </button>
+        <button ion-item (click)="openPage('')">
+            Chat
+        </button>
+        <button ion-item (click)="openPage('')">
+            Contact
+        </button>
+        <button ion-item (click)="openPage('LoginPage')">
+            Login
+        </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+      
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
 
 <ion-content padding>
   <h1>Hallo en welkom</h1>
