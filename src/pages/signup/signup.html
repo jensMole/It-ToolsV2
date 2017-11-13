@@ -13,24 +13,24 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="achterGrondKleur" padding>
   <form [formGroup]="signupForm" (submit)="signupUser()" novalidate>
 
-    <ion-item>
+    <ion-item class="achterGrondKleur">
       <ion-label stacked>Email</ion-label>
       <ion-input formControlName="email" type="email" placeholder="Jouw email adres"
         [class.invalid]="!signupForm.controls.email.valid && signupForm.controls.email.dirty"></ion-input>
     </ion-item>
-    <ion-item class="error-message" *ngIf="!signupForm.controls.email.valid  && signupForm.controls.email.dirty">
+    <ion-item class="error-message achterGrondKleur" *ngIf="!signupForm.controls.email.valid  && signupForm.controls.email.dirty">
       <p>Gelieve een juist e-mailadres in te vullen.</p>
     </ion-item>
 
-    <ion-item>
+    <ion-item class="achterGrondKleur">
       <ion-label stacked>Wachtwoord</ion-label>
       <ion-input formControlName="password" type="password"  placeholder="Jouw wachtwoord"
         [class.invalid]="!signupForm.controls.password.valid && signupForm.controls.password.dirty"></ion-input>
     </ion-item>
-    <ion-item class="error-message" *ngIf="!signupForm.controls.password.valid  && signupForm.controls.password.dirty">
+    <ion-item class="error-message achterGrondKleur" *ngIf="!signupForm.controls.password.valid  && signupForm.controls.password.dirty">
       <p>Wachtwoord moet meer dan 6 tekens bevatten.</p>
     </ion-item>
 
