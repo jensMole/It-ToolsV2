@@ -12,27 +12,32 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="achterGrondKleur" padding>
   <form [formGroup]="loginForm" (submit)="loginUser()" novalidate>
-
-    <ion-item>
-      <ion-label stacked>Email</ion-label>
+    <h1 class="textCenter">
+      Welkom
+    </h1>
+    <h2 class="textCenter">
+      bij TheBelgiumGames
+    </h2>
+    <ion-item class="achterGrondKleur">
+      <ion-label color="dark" class="tekstKleur" stacked>Email</ion-label>
       <ion-input #email formControlName="email" type="email" placeholder="Jouw e-mailadres"
         [class.invalid]="!loginForm.controls.email.valid &&
           loginForm.controls.email.dirty"></ion-input>
     </ion-item>
-    <ion-item class="error-message" *ngIf="!loginForm.controls.email.valid  &&
+    <ion-item class="error-message achterGrondKleur" *ngIf="!loginForm.controls.email.valid  &&
       loginForm.controls.email.dirty">
       <p>Gelieve een juist e-mailadres in te vullen.</p>
     </ion-item>
 
-    <ion-item>
-      <ion-label stacked>Password</ion-label>
+    <ion-item class="achterGrondKleur">
+      <ion-label  color="dark" stacked>Password</ion-label>
       <ion-input #password formControlName="password" type="password" placeholder="Jouw wachtwoord"
         [class.invalid]="!loginForm.controls.password.valid &&
           loginForm.controls.password.dirty"></ion-input>
     </ion-item>
-    <ion-item class="error-message" *ngIf="!loginForm.controls.password.valid  &&
+    <ion-item class="error-message achterGrondKleur" *ngIf="!loginForm.controls.password.valid  &&
       loginForm.controls.password.dirty">
       <p>Wachtwoord moet meer dan 6 tekens bevatten.</p>
     </ion-item>
