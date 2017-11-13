@@ -11,4 +11,10 @@ export class HomePage {
 
   }
 
+  LogOut(){
+
+    
+    
+  }
+
 }

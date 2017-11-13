@@ -14,6 +14,8 @@ import { AuthProvider } from '../../providers/auth/auth';
 //nakijken als je een geldige email adres opgeeft.
 import { EmailValidator } from '../../validators/email';
 
+import { HomePage } from '../home/home';
+
 /**
  * Generated class for the LoginPage page.
  * 
@@ -71,10 +73,10 @@ export class LoginPage {
     //als het valid is.
     } else {
       //verkrijgen van email en passwoord.
-      //als een error dan error tonen met een ok en cancel knop.
+      //als een error dan error tonen met een ok knop.
       this.authData.loginUser(this.loginForm.value.email, this.loginForm.value.password)
       .then( authData => {
-        this.navCtrl.setRoot('HomePage');
+        this.navCtrl.setRoot(HomePage);
       }, error => {
         this.loading.dismiss().then( () => {
           let alert = this.alertCtrl.create({
