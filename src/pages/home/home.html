@@ -1,6 +1,7 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
+    <ion-title >
+      <ion-icon style="padding-right:10px;" menuToggle name="menu"></ion-icon>
       Home
     </ion-title>
   </ion-navbar>
@@ -17,20 +18,20 @@
         <button ion-item menuClose>
             Home
         </button>
-        <button ion-item (click)="openPage('')">
+        <button ion-item (click)="openPage('VideoPage')">
             Video's
         </button>
-        <button ion-item (click)="openPage('')">
+        <button ion-item (click)="openPage('AankondigingenPage')">
             Aankondigingen
         </button>
-        <button ion-item (click)="openPage('')">
+        <button ion-item (click)="openPage('ChatPage')">
             Chat
         </button>
-        <button ion-item (click)="openPage('')">
+        <button ion-item (click)="openPage('ContactPage')">
             Contact
         </button>
         <button ion-item (click)="openPage('LoginPage')">
-            Login
+            Login (TESTING)
         </button>
         </ion-list>
     </ion-content>

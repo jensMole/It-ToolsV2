@@ -5,6 +5,10 @@ import { NavController } from 'ionic-angular';
 import { AuthProvider } from '../../providers/auth/auth';
 
 import { LoginPage } from '../login/login';
+import { VideoPage } from '../video/video';
+import { AankondigingenPage } from '../aankondigingen/aankondigingen';
+import { ChatPage } from '../chat/chat';
+import { ContactPage } from '../contact/contact';
 
 @Component({
   selector: 'page-home',
@@ -17,6 +21,7 @@ export class HomePage {
 
   openPage(p){
     this.navCtrl.push(p);
+    // this.navCtrl.setRoot(p);
   }
 
   LogOut(){

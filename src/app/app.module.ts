@@ -8,6 +8,10 @@ import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+import { VideoPage } from '../pages/video/video';
+import { AankondigingenPage } from '../pages/aankondigingen/aankondigingen';
+import { ChatPage } from '../pages/chat/chat';
+import { ContactPage } from '../pages/contact/contact';
 import { AuthProvider } from '../providers/auth/auth';
 
 // Importing AF2 Module
@@ -27,7 +31,7 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
   ],
   imports: [
     BrowserModule,
